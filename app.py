@@ -7,6 +7,8 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = '\xc8\x06\xb6\xd6\xb0\x87\x03>\xc2\r?\x85'
 
 
+
+
 def token_required(func):
     @wraps(func)
     def decorated(*args, **kwargs):
