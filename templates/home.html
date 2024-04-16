@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    {% if session.logged_in %}
+        <p>Welcome, {{ session.user }}!</p>
+        <form action="/logout" method="GET">
+            <input type="submit" value="Logout">
+        </form>
+    {% else %}
+        <p>You are not logged in.</p>
+    {% endif %}
+</body>
+</html>

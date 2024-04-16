@@ -10,7 +10,8 @@ form {
     background-color: #f9f9f9;
 }
 input[type="username"],
-input[type="password"] {
+input[type="password"],
+input[type="submit"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -19,8 +20,6 @@ input[type="password"] {
     box-sizing: border-box;
 }
 input[type="submit"] {
-    width: 100%;
-    padding: 10px;
     background-color: #4CAF50;
     color: white;
     border: none;
